@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="two_cols">
+    <div class="row">
+        <div id="image_holder">
+            <img src="img/2000.jpg" srcset="
+                        img/2000.jpg 2000w,
+                        img/1000.jpg 1000w,
+                        img/750.jpg 750w,
+                        img/500.jpg 500w,
+                        img/250.jpg 250w"
+                sizes="(max-width: 600px) 100vw, 50vw"
+            />
+        </div>
+        <div>
+            <h1>The Image IS Responsive</h1>
+            <p>The original image is 4160x5027 and it 2.65MB!</p>
+            <p>But, depending on the screen size of your device, you will get the right sized image!</p>
+        </div>
+    </div>
+</body>
+
+</html>
