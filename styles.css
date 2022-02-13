@@ -14,3 +14,23 @@ h1 {
 p {
     text-align: center;
 }
+
+.row {
+  display: flex;
+}
+
+.two_cols .row #image_holder {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .row {
+        display: block;  
+    }
+
+    .two_cols .row #image_holder {
+        width: 100%;
+    }
+
+}
