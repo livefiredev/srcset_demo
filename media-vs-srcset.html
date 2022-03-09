@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body, html {
+                padding: 0px;
+                margin: 0px;
+                background-color: darkslategrey;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .bgImage {
+                background-image: url('https://source.unsplash.com/random/2500x500');
+                background-size: cover;
+                box-shadow: 0px 0px 0px 4000px rgba(27, 61, 88, 0.5) inset;
+            }
+
+            .bgImage h1 {
+                padding: 10%;
+                text-align: center;
+            }
+
+            img.resp {
+                max-width: 100%;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            @media only screen and (min-width: 768px) {
+
+                .row {
+                    display: flex;
+                }
+
+                .col-6 {
+                    flex: 1 1 50%;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bgImage">
+            <h1>I Am A Header With Background Image</h1>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1 class="center">I am A Title</h1>
+            </div>
+            <div class="col-6">
+                <img src="https://source.unsplash.com/random/1500x1500" class="resp" />
+            </div>
+        </div>
+    </body>
+</html>
