@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkslategrey;
+            color: beige;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p,
+        li {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .pad {
+            padding: 10%;
+        }
+
+        .m-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <div class="pad">
+                <h1>The Solution With Srcset</h1>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="https://placehold.jp/576x576.png" 
+            srcset="https://placehold.jp/576x576.png 576w,
+                        https://placehold.jp/768x768.png 768w,
+                        https://placehold.jp/992x992.png 992w,
+                        https://placehold.jp/600x600.png 600w,
+                        https://placehold.jp/700x700.png 700w,
+                        https://placehold.jp/960x960.png 960w" 
+            sizes="(min-width: 992px) 50vw, 100vw"
+            />
+        </div>
+    </div>
+</body>
+
+</html>

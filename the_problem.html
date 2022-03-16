@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkslategrey;
+            color: beige;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .pad {
+            padding: 10%;
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {}
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {}
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+
+        }
+
+        /* X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+        }
+
+        /* XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <div class="pad">
+                <h1>The Problem</h1>
+                <p>
+                    If we target a 1920px width desktop, the image on the right will take up max: 1920/2 = 960px.
+                </p>
+                <p>
+                    Since this page is responsive, we are also targeting a 1170px iPhone13. So, we need to load a 1170px image. Because on the phone, the image will be going end to end.
+                </p>
+                <p>
+                    So, since we are trying to target both the devices at once, the image is much larger than needed for desktop.
+                </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="https://placehold.jp/1170x1170.png" />
+        </div>
+    </div>
+</body>
+
+</html>

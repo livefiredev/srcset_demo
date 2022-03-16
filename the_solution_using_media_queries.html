@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkslategrey;
+            color: beige;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .pad {
+            padding: 10%;
+        }
+
+        .m-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .col-6-sm-img, .col-6-md-img, .col-6-lg-img, .col-6-xl-img, .col-6-xxl-img {
+            display: none;
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {
+    
+            .col-6-xs-img {
+                display: none;
+            }
+
+            .col-6-sm-img {
+                display: block;
+            }
+        
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+
+            .col-6-sm-img {
+                display: none;
+            }
+
+            .col-6-md-img {
+                display: block;
+            }
+
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+            .col-6-md-img {
+                display: none;
+            }
+
+            .col-6-lg-img {
+                display: block;
+            }
+
+        }
+
+        /* X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+            .col-6-lg-img {
+                display: none;
+            }
+
+            .col-6-xl-img {
+                display: block;
+            }
+
+        }
+        
+
+        /* XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) {
+
+            .row {
+                display: flex;
+            }
+
+            .col-6 {
+                flex: 1 1 50%;
+            }
+
+            .col-6-xl-img {
+                display: none;
+            }
+
+            .col-6-xxl-img {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <div class="pad">
+                <h1>The Solution With Media Queries (Does not really work)</h1>
+                <p>The idea is that we have images of different sizes. Then we use media queries to <strong>"display: block"</strong> and <strong>"display: none"</strong> different images.</p>
+                <p>There are are few issues with this.</p>
+                <ul>
+                    <li>The browser does not load only the one image it needs. It loads all.</li>
+                    <li>This approach does not factor in "Retina" displays. The image will look blurry on them. (Can be fixed, way more work)</li>
+                    <li>Code is a mess.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="https://placehold.jp/576x576.png" class="col-6-xs-img m-auto" />
+            <img src="https://placehold.jp/768x768.png" class="col-6-sm-img m-auto" />
+            <img src="https://placehold.jp/992x992.png" class="col-6-md-img m-auto" />
+            <img src="https://placehold.jp/600x600.png" class="col-6-lg-img m-auto" />
+            <img src="https://placehold.jp/700x700.png" class="col-6-xl-img m-auto" />
+            <img src="https://placehold.jp/960x960.png" class="col-6-xxl-img m-auto" />
+        </div>
+    </div>
+</body>
+
+</html>
